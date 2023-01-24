@@ -62,7 +62,7 @@ with engine.connect() as conn:
         [{"x": 11, "y": 12}, {"x": 13, "y": 14}],
     )
     conn.commit()
-    
+
 BEGIN (implicit)
 INSERT INTO some_table (x, y) VALUES (?, ?)
 [...] ((11, 12), (13, 14))
@@ -90,3 +90,4 @@ x: 6  y: 8
 x: 9  y: 10
 ROLLBACK
 
+https://docs.sqlalchemy.org/en/14/tutorial/metadata.html
